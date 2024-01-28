@@ -8,11 +8,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class Task15 {
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver = new ChromeDriver(); //Instantiated new webdriver as chrome driver
     @BeforeClass
     public void setup() {
-        driver.get("https://www.google.com/");
-        driver.manage().window().maximize();
+        driver.get("https://www.google.com/"); //Got the url using the driver
+        driver.manage().window().maximize(); //maximised the driver
     }
     @Test
     public void searchGoogle()

@@ -27,7 +27,7 @@ public class Task17 {
         WebElement frame = driver.findElement(By.id("loginIframe"));
         driver.switchTo().frame(frame);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        driver.findElement(By.xpath("//input[@placeholder='Mobile Number/ Email']")).sendKeys("vidhusha95@gmail.com");;
+        driver.findElement(By.xpath("//input[@placeholder='Mobile Number/ Email']")).sendKeys("vidhusha95@gmail.com");
         driver.findElement(By.xpath("//button[text()='continue']")).click();
         driver.findElement(By.xpath("//form[@id='loginOtpUC']//input[@class='otpValueCode']")).sendKeys("1234");
         driver.findElement(By.xpath("//form[@id='loginOtpUC']//button[text()='continue']")).click();

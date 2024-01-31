@@ -34,7 +34,6 @@ public class Task21 {
     public void handleWindows(){ //Qn 2
         driver.get("https://the-internet.herokuapp.com/windows"); //Got the url using the driver
         driver.manage().window().maximize(); //maximised the driver
-        String parent=driver.getWindowHandle();
         driver.findElement(By.xpath("//a[text()='Click Here']")).click();
         Set<String> windows = driver.getWindowHandles();
         ArrayList<String> windowsList = new ArrayList<>(windows);

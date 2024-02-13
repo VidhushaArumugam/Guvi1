@@ -144,7 +144,7 @@ public class Task9 {
 
 
     }
-        public static void main (String args[]) { //calling all answers using methods
+        public static void main (String[] args) { //calling all answers using methods
             Task9.Question1();
             Task9.Question2();
             Task9.Question3();
